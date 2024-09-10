@@ -1,0 +1,79 @@
+
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  :root {
+    --base-color: black;
+    --background-color: white;
+  }
+  .darkmode {
+    --base-color: white;
+    --background-color: black;
+  
+  }
+  .darkmode main{
+    background-color: rgb(36, 32, 32);
+  }
+  .darkmode article {
+    border-color: white;
+  }
+  
+  .darkmode .article__title {
+    border-color: white;
+  }
+  
+  .darkmode footer {
+    color: white;
+  }
+  #theme-switch img:first-child {
+    display: none;
+  }
+  
+  .darkmode #theme-switch img:last-child {
+    display: none;
+  }
+  .darkmode #theme-switch img:first-child {
+    display: block;
+  }
+
+  #modeSwitcher{
+    opacity: 0;
+    height: 0;
+    width: 0;
+  }
+ 
+  .icon {
+    height: 30px;
+    width: 40px;
+    cursor: pointer;
+    
+  }
+  .icon2 {
+    height: 30px;
+    width: 40px;
+    cursor: pointer;
+    
+    
+  }
+  .icon:hover{
+    cursor: pointer;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  body {
+    color: var(--base-color);
+    background-color: var(--background-color);
+  }
+  
