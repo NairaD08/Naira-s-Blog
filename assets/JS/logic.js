@@ -27,7 +27,7 @@ themeSwitch.addEventListener("click", () =>{
     } 
 })
 
-function readLocalStorage() {
+function readLocalStorage() { //creating the arrey in the local storage
 let blogPosts = localStorage.getItem("blogPosts");
 if (blogPosts) {
     return JSON.parse(blogPosts)
@@ -38,8 +38,9 @@ if (blogPosts) {
  //   return []; // empty arrey retun
 
 
-function writeLocalStorage(userInput) {
-let blogPosts = readLocalStorage()  
-blogPosts.push(userInput)  
+function writeLocalStorage(userInput) { //writing the user inputs in the arrey 
+let blogPosts = readLocalStorage()  //call  stored data
+blogPosts.push(userInput)  // modify the stored data
 localStorage.setItem('blogPosts', JSON.stringify(blogPosts))
 }
+

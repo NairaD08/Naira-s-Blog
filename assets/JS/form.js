@@ -4,7 +4,9 @@ const content = document.getElementById("content");
 const submit = document.getElementById("submit");
 
 
-submit.addEventListener("click", () =>{
+
+submit.addEventListener("click", (event) =>{
+    event.preventDefault();
     console.log("clicked")
 let userInput = {
     username:username.value.trim(), 
@@ -14,9 +16,9 @@ let userInput = {
 if (userInput.username === "" || userInput.title === "" || userInput.content === "") {
     alert("Please complete the form.");
 } else {
-    let blogPosts = JSON.parse(localStorage.getItem("blogPosts")) || [];
-    blogPosts.push(userInput);
-    localStorage.setItem('blogPosts', JSON.stringify(blogPosts));
+
+    writeLocalStorage(userInput); //storing the user input in an arrey
+  
     window.location.href = "./blog.html";
 }
 });  
@@ -26,7 +28,7 @@ if (userInput.username === "" || userInput.title === "" || userInput.content ===
 // checked when the submit button is clicked.
 
 
-//  writeLocalStorage(userInput) 
+ 
 
 
 
