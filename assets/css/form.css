@@ -1,9 +1,9 @@
 :root {
-	--venus-color-top: #fae09f;
-	--venus-color-top-mid: #e09f26;
-	--venus-color-bottom-mid: #cf9b33;
-	--venus-color-bottom: #795e21;
-  }
+  --circle-color-top: #fae09f;
+  --circle-color-top-mid: #e09f26;
+  --circle-color-bottom-mid: #cf9b33;
+  --circle-color-bottom: #795e21;
+}
 main {
   display: flex;
   min-height: 80vh;
@@ -34,89 +34,78 @@ section:last-child {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  
-  
-}
- 
-  
- 
-
-  nav{
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    margin-left: 92%;
 }
 
-   
+nav {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 92%;
+}
 
 .form {
-display: flex;
-justify-content: right;
-flex-direction: column;
-
-
+  display: flex;
+  justify-content: right;
+  flex-direction: column;
 }
-
-
-
 
 .logo {
-display: flex;
-justify-content: center;
-align-items: center;
-background: linear-gradient(var(--venus-color-top) 3%, var(--venus-color-top-mid) 18%, var(--venus-color-bottom-mid) 89%, var(--venus-color-bottom) 100%);
-height: 500px;
-width: 500px;
-border-radius: 50%;
-color: white;
-margin: 40px 0;
-max-height: 550px;
-max-width: 550px;
-font-size: 40px;
-font-family:Arial, Helvetica, sans-serif
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    var(--circle-color-top) 3%,
+    var(--circle-color-top-mid) 18%,
+    var(--circle-color-bottom-mid) 89%,
+    var(--circle-color-bottom) 100%
+  );
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  color: white;
+  margin: 40px 0;
+  max-height: 550px;
+  max-width: 550px;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.formInput{
-	width: 550px;
-	margin:16px;
-	
-	
+.formInput {
+  width: 550px;
+  margin: 16px;
 }
 
-#content{
-	height: 120px;
-	
+#content {
+  height: 120px;
 }
 
-
-.formLabel{
-	font-weight: bold;
-	font-size: 16px;
+.formLabel {
+  font-weight: bold;
+  font-size: 16px;
 }
 
-h2{
-	font-size: 24px;
+h2 {
+  font-size: 24px;
 }
 
-.btn{
-	margin-top: 16px;
-	width: 550px;
-	background-color: black;
-	color: white;
-	height: 30px;
-	margin-left: 16px;
+.btn {
+  margin-top: 16px;
+  width: 550px;
+  background-color: black;
+  color: white;
+  height: 30px;
+  margin-left: 16px;
 }
 
-.darkmode .section{
-	border-color: white;
+.darkmode .section {
+  border-color: white;
 }
 
-.darkmode .main{
-	border: 9px double white;
+.darkmode .main {
+  border: 9px double white;
 }
 
-.darkmode .btn{
-	background-color: white;
-	color: black;
+.darkmode .btn {
+  background-color: white;
+  color: black;
 }
