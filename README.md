@@ -18,3 +18,5 @@ Light/Dark mode toggle for user interface customization.
 Blog posts are stored locally using browser localStorage.
 Full blog post management with form validation.
 Responsive design for different screen sizes.
+
+![image 1](image-1.png)
