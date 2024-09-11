@@ -19,4 +19,6 @@ Blog posts are stored locally using browser localStorage.
 Full blog post management with form validation.
 Responsive design for different screen sizes.
 
-![image 1](image-1.png)
+![my blog screenshot page1](https://github.com/NairaD08/Personal-Blog/blob/main/image-1.png).
+
+![my blog screenshot page1](https://github.com/NairaD08/Personal-Blog/blob/main/assets/images/Naira%202.png).
